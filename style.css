@@ -1,0 +1,154 @@
+body{
+  background-image: url("/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  overflow-y: hidden;
+}
+.container{
+    margin: 40px auto;
+    width: 550px;
+    height: 550px;
+    background-color: #58c0f0;
+    color: white;
+    font-family: 'Alexandria', sans-serif;
+    box-shadow:1px 1px 10px wheat;
+    border-radius: 5px;
+}
+.heading{
+    font-size: 35px;
+    text-align: center;
+    margin: 0px auto;
+    width: 280px;
+    padding-top: 20px;
+
+}
+.heading div{
+    border:1px;
+    border-top:3px dotted white;
+    margin-top: 7px;
+}
+.player-change{
+  font-size: 30px;
+  height: 80px;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items:center;
+}
+
+.box{
+    display: grid;
+    grid-template-columns:100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    height: 300px;
+    width: 300px;
+    margin: 0px auto;
+    cursor:pointer;
+}
+.box div{
+  font-size: 55px;
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
+  text-align: center;
+  line-height: 95px;
+}
+.box div:nth-child(3n){
+       border-right: none;
+}
+.box div:nth-child(n+7){
+  border-bottom: none;
+}
+
+
+/* table {
+    margin: 0px auto;
+    border-collapse: collapse;
+    border-style: hidden;
+
+  }
+  table td {
+    border: 3px solid #e5bd73;
+    text-align: center;
+  }
+  td{
+    text-align: center;
+    height: 80px;
+    width: 80px;
+    font-size: 60px;
+  } */
+  .btns{
+    text-align: center;
+    padding-top: 20px;
+    justify-content: space-evenly;
+    display: flex;
+  }
+  .btns button{
+    font-size: 20px;
+    padding: 15px;
+    font-family: 'Alexandria', sans-serif;
+    background-color:#f54c3f;
+    color: white;
+    border: none;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 8px ;
+    
+  }
+  .btns button:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 10px ;
+  }
+
+.box{
+  position: relative;
+}
+.r-1{
+  position: fixed;
+  width: 290px;
+  border: 2px solid black;
+  top: 37vh;
+}
+.r-2{
+  position: fixed;
+  width: 290px;
+  border: 2px solid black;
+  top: 53vh;
+}
+.r-3{
+  position: fixed;
+  width: 290px;
+  border: 2px solid black;
+  top: 69vh;
+}
+.c-1{
+  position:absolute;
+  border: 2px solid black;
+  height: 290px;
+  left: 47px
+}
+.c-2{
+  position:absolute;
+  border: 2px solid black;
+  height: 290px;
+  left: 145px
+}
+.c-3{
+  position:absolute;
+  border: 2px solid black;
+  height: 290px;
+  left: 250px
+}
+.d-1{
+  position:absolute;
+  border: 3px solid black;
+  height: 280px;
+  left: 140px;
+  transform: skew(45deg);
+}
+.d-2{
+  position:absolute;
+  border: 3px solid black;
+  height: 280px;
+  left: 150px;
+  transform: skew(-45deg);
+}
